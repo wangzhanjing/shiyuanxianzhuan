@@ -1,0 +1,60 @@
+{
+	"bsonType": "object",
+	"required": ["name", "desc", "sort", "show_img", "price", "pre_price"],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（商品 ID），系统自动生成"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "商品名称",
+			"title": "名称",
+			"trim": "both"
+		},
+		"keywords": {
+			"bsonType": "string",
+			"description": "商品关键字，为搜索引擎收录使用",
+			"title": "关键字",
+			"trim": "both"
+		},
+		"desc": {
+			"bsonType": "string",
+			"description": "商品详细描述",
+			"title": "详细描述"
+		},
+		"show_img": {
+			"bsonType": "string",
+			"description": "商品缩略图，用于在列表或搜索结果中预览显示",
+			"title": "缩略图地址",
+			"trim": "both"
+		},
+		"lunbo_imgs": {
+			"bsonType": "array",
+			"description": "商品详情页的图地址"
+		},
+		"sort": {
+			"bsonType": "array",
+			"description": "商品分类",
+			"title": "商品分类"
+		},
+		"price": {
+			"bsonType": "int",
+			"description": "商品价格",
+			"title": "商品价格"
+		},
+		"pre_price": {
+			"bsonType": "int",
+			"description": "原价格"
+		},
+		"time": {
+			"bsonType": "int",
+			"description": "上架时间"
+		}
+	}
+}

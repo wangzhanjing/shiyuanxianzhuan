@@ -1,0 +1,129 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "社区交流"
+			}
+		},
+		{
+			"path": "pages/sell/sell",
+			"style": {
+				"navigationBarTitleText": "发布商品"
+			}
+		}, 
+		{
+			"path": "pages/bought/bought",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		}
+		,
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/search/searched",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+		    "path" : "pages/me/me",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "会员中心",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#eed600",
+				"navigationBarTextStyle":"white"
+		    }
+		    
+		},
+		{
+			"path": "pages/index/guest/guest",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/index/books/books",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/index/partwork/partwork",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/index/allSort/allSort",
+			"style": {
+				
+			}
+		},
+		{
+		    "path" : "pages/detial/detial",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "物品详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "石院闲转",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#464646",
+		"selectedColor": "#b50e03",
+		"list":[{
+			"text":"首页",
+			"pagePath":"pages/index/index",
+			"iconPath":"static/image/index.png",
+			"selectedIconPath":"static/image/index_active.png"
+		},
+		{
+			"text":"闲转",
+			"pagePath":"pages/community/community",
+			"iconPath":"static/image/community.png",
+			"selectedIconPath":"static/image/community_active.png"
+		},
+		{
+			"text":"发布",
+			"pagePath":"pages/sell/sell",
+			"iconPath":"static/image/sell.png",
+			"selectedIconPath":"static/image/sell.png"
+		},
+		{
+			"text":"我的订单",
+			"pagePath":"pages/bought/bought",
+			"iconPath":"static/image/bought.png",
+			"selectedIconPath":"static/image/bought_active.png"
+		},
+		{
+			"text":"我的",
+			"pagePath":"pages/me/me",
+			"iconPath":"static/image/user.png",
+			"selectedIconPath":"static/image/user_active.png"
+		}]
+	}
+}
+
